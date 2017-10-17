@@ -1,0 +1,14 @@
+{
+  "name": "peterclarke/datalogger_bathroom_scales_bundle",
+  "license": "GPL-3.0",
+  "type": "symfony-bundle",
+  "autoload": {
+    "psr-4": {
+      "Theapi\\": "src/Theapi"
+    }
+  },
+  "require": {
+    "sensio/framework-extra-bundle": "^3.0.2"
+  }
+
+}
