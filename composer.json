@@ -1,5 +1,5 @@
 {
-  "name": "peterclarke/datalogger_bathroom_scales_bundle",
+  "name": "theapi/datalogger_bathroom_scales_bundle",
   "license": "GPL-3.0",
   "type": "symfony-bundle",
   "autoload": {
