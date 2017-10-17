@@ -8,7 +8,8 @@
     }
   },
   "require": {
-    "sensio/framework-extra-bundle": "^3.0.2"
+    "sensio/framework-extra-bundle": "^3.0.2",
+    "theapi/google_apiclient_bundle": "dev-master"
   }
 
 }
