@@ -22,6 +22,8 @@ class TheapiBathroomScalesExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
+        $container->setParameter( 'theapi_bathroom_scales.people_json', $config[ 'people_json' ]);
+
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
     }
