@@ -50,6 +50,11 @@ services:
               arguments:
                   - '@service_container'
 
+    Theapi\BathroomScalesBundle\Service\DataPointLogService:
+        public: true
+        tags:
+            - { name: event_subscriber }
+
     Theapi\BathroomScalesBundle\Service\People\PeopleService:
         public: true
         calls:

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Theapi\BathroomScalesBundle;
+namespace Theapi\BathroomScalesBundle\Entity;
 
 
 class Weight {

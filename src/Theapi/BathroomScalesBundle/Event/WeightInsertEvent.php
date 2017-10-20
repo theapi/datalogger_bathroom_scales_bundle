@@ -2,7 +2,7 @@
 
 namespace Theapi\BathroomScalesBundle\Event;
 
-use Theapi\BathroomScalesBundle\Weight;
+use Theapi\BathroomScalesBundle\Entity\Weight;
 use Symfony\Component\EventDispatcher\Event;
 
 /**

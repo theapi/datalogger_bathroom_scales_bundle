@@ -3,7 +3,7 @@
 namespace Theapi\BathroomScalesBundle\Command;
 
 use Theapi\BathroomScalesBundle\Event\WeightInsertEvent;
-use Theapi\BathroomScalesBundle\Weight;
+use Theapi\BathroomScalesBundle\Entity\Weight;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -51,7 +51,7 @@ class WeightCommand extends ContainerAwareCommand {
     // Send the event.
     $dispatcher = $this->getContainer()->get('event_dispatcher');
     $event = new WeightInsertEvent($weight);
-    $dispatcher->dispatch(WeightInsertEvent::NAME, $event);
+    $dispatcher->dispatch('weight.insert', $event);
 
   }
 }
